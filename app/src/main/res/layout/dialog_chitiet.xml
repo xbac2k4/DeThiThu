@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:background="#ff9a33"
+            android:padding="10dp"
+            android:text="CHI TIẾT SINH VIÊN"/>
+        <LinearLayout
+            android:id="@+id/layout_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FF0000"
+                android:textStyle="bold"
+                android:text="ID: "
+                android:maxLines="1"
+                android:layout_marginHorizontal="10dp"/>
+            <TextView
+                android:id="@+id/tv_ma_sv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="Mã sinh viên: "
+                android:maxLines="1"
+                android:layout_marginHorizontal="10dp"/>
+            <TextView
+                android:id="@+id/tv_ten_sv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:text="Tên: "
+                android:maxLines="1"
+                android:layout_marginHorizontal="10dp"/>
+            <TextView
+                android:id="@+id/tv_gioi_tinh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:text="Giới tính: "
+                android:maxLines="1"
+                android:layout_marginHorizontal="10dp"/>
+            <TextView
+                android:id="@+id/tv_ngay_sinh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:text="Ngày sinh: "
+                android:maxLines="1"
+                android:layout_marginHorizontal="10dp"/>
+            <TextView
+                android:id="@+id/tv_khoa_hoc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:text="Khóa học: "
+                android:maxLines="1"
+                android:layout_marginHorizontal="10dp"/>
+            <TextView
+                android:id="@+id/tv_lop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:text="Lớp: "
+                android:maxLines="1"
+                android:layout_marginHorizontal="10dp"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_dong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đóng"
+            android:layout_margin="10dp"
+            android:backgroundTint="#ff9a33"/>
+    </LinearLayout>
+</LinearLayout>

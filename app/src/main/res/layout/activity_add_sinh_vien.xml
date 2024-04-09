@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#00FFEEF2">
+    <!--    <TextView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:gravity="center"-->
+    <!--        android:textSize="24sp"-->
+    <!--        android:textColor="@color/white"-->
+    <!--        android:textStyle="bold"-->
+    <!--        android:padding="15dp"-->
+    <!--        android:background="#ff9a33"-->
+    <!--        android:text="ADD FRUITS"/>-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff9a33"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingLeft="10dp"
+                    android:textStyle="bold"
+                    android:text="Mã sinh viên: "/>
+                <EditText
+                    android:id="@+id/edt_ma_sv"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:hint="Nhập tên xe..."
+                    android:inputType="text"
+                    android:textColorHint="#2E2E2E"
+                    android:background="@drawable/border"
+                    android:textSize="16sp"
+                    android:padding="10dp"
+                    android:drawablePadding="15dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingLeft="10dp"
+                    android:textStyle="bold"
+                    android:text="Tên sinh viên: "/>
+                <EditText
+                    android:id="@+id/edt_ten_sv"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:hint="Nhập tên xe..."
+                    android:inputType="text"
+                    android:textColorHint="#2E2E2E"
+                    android:background="@drawable/border"
+                    android:textSize="16sp"
+                    android:padding="10dp"
+                    android:drawablePadding="15dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingLeft="10dp"
+                    android:textStyle="bold"
+                    android:text="Ngày sinh: "/>
+                <EditText
+                    android:id="@+id/edt_ngay_sinh"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:hint="Nhập ngày sinh..."
+                    android:cursorVisible="false"
+                    android:clickable="false"
+                    android:inputType="text"
+                    android:textColorHint="#2E2E2E"
+                    android:background="@drawable/border"
+                    android:textSize="16sp"
+                    android:padding="10dp"
+                    android:drawablePadding="15dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingLeft="10dp"
+                    android:textStyle="bold"
+                    android:text="Giới tính: "/>
+                <Spinner
+                    android:id="@+id/spn_gioi_tinh"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:background="@drawable/border"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingLeft="10dp"
+                    android:textStyle="bold"
+                    android:text="Khóa học: "/>
+                <EditText
+                    android:id="@+id/edt_khoa_hoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:hint="Nhập khóa học..."
+                    android:inputType="numberDecimal"
+                    android:textColorHint="#2E2E2E"
+                    android:background="@drawable/border"
+                    android:textSize="16sp"
+                    android:padding="10dp"
+                    android:drawablePadding="15dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingLeft="10dp"
+                    android:textStyle="bold"
+                    android:text="Lớp: "/>
+                <EditText
+                    android:id="@+id/edt_lop"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:hint="Nhập lớp..."
+                    android:inputType="text"
+                    android:textColorHint="#2E2E2E"
+                    android:background="@drawable/border"
+                    android:textSize="16sp"
+                    android:padding="10dp"
+                    android:drawablePadding="15dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btn_submit"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/border"
+                    android:backgroundTint="#ff9a33"
+                    android:layout_marginHorizontal="20dp"
+                    android:textSize="16sp"
+                    android:text="SUBMIT"
+                    android:textStyle="bold"
+                    android:textColor="#fff" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
